@@ -1,8 +1,26 @@
-.section {
-    position: relative;
+.title {
+    background-color: brown;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 18rem 0;
+}
+
+.titleText {
+    @apply text-tblack-d;
+    font-size: calc(4 * (1vw + 1vh));
+}
+
+.content section {
+    min-height: 400px;
+    padding: 200px 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
-    padding: 100px 20vw;
+}
+
+.content section h1 {
+    font-size: xx-large;
+    font-weight: bold;
 }
