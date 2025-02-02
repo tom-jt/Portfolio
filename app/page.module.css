@@ -1,14 +1,16 @@
 .title {
-    background-color: brown;
     width: 100%;
     display: flex;
     gap: 2rem;
     justify-content: center;
     padding: 18rem 0;
+    background-image: url('/image/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .titleText {
-    @apply text-tblack-d;
+    @apply text-twhite-d;
     font-size: calc(4 * (1vw + 1vh));
 }
 
@@ -23,4 +25,20 @@
 .content section h1 {
     font-size: xx-large;
     font-weight: bold;
+}
+
+.content1 {
+    @apply bg-tblack-d;
+}
+
+.content2 {
+
+}
+
+.separator {
+    background-image: url('/image/separator.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    margin-top: -30px;
 }
