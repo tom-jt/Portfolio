@@ -9,25 +9,6 @@
     background-position-y: -85px;
 }
 
-.titleText {
-    @apply m-auto p-20 relative text-center text-transparent 
-    outline outline-8;
-    font-size: calc(3 * (1vw + 1vh));
-    font-weight: initial;
-    animation: revealTitle 500ms ease-out forwards;
-    animation-delay: 300ms;
-    top: -6rem;
-    rotate: -8deg;
-}
-
-@keyframes revealTitle {
-    to {
-        @apply text-twhite-d shadow-2xl;
-        top: -2rem;
-        rotate: 0deg;
-    }
-}
-
 .content section {
     min-height: 600px;
     padding: 100px 20vw;
@@ -54,4 +35,5 @@
 
 .projectFrames {
     display: flex;
+    margin-top: 20px;
 }

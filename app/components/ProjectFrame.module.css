@@ -1,0 +1,24 @@
+.frame {
+    @apply outline rounded w-1/3 min-h-96 m-6
+    transition-all ease-in-out duration-200 cursor-pointer relative flex
+    shadow-xl outline-teal-400 justify-center
+}
+
+.frame:hover {
+    @apply shadow-2xl shadow-black;
+    rotate: 2deg;
+    scale: 1.1;
+}
+    
+.img {
+    @apply h-full object-cover
+}
+
+.desc {
+    @apply text-center absolute mt-60
+}
+
+.desc h1 {
+    font-size: larger;
+    margin-bottom: 0;
+}

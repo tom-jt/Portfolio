@@ -1,19 +1,21 @@
 import React from 'react';
 import styles from './NavBarIcon.module.css'
+import Link from 'next/link';
 
 interface IconProp {
   icon: any,
-  text?: string
+  text?: string,
+  link: string
 }
 
-const NavBarIcon = ({ icon, text = 'Tooltip 💡' }: IconProp) => {
+const NavBarIcon = ({ icon, text = 'Tooltip 💡', link }: IconProp) => {
   return (
-    <div className={styles.icon + ' group'}>
+    <Link href={link} className={styles.icon + ' group'}>
       {icon}
       <span className={styles.tooltip + ' group-hover:scale-100'}>
         {text}
       </span>
-    </div>
+    </Link>
   )
 }
 

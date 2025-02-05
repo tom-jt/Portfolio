@@ -4,7 +4,8 @@
         bg-tblack-900 text-teal-400
         hover:bg-teal-400 hover:text-twhite-d
         rounded-3xl hover:rounded-xl
-        transition-all duration-200 ease-linear;
+        transition-all duration-200 ease-linear
+        cursor-pointer;
 }
 
 .tooltip {

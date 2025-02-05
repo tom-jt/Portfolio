@@ -10,9 +10,9 @@ const NavBar = () => {
         flex flex-col
         bg-tblack-950 text-twhite-d shadow-lg'
       >
-        <NavBarIcon icon={<BsHouseFill size='32' />} text='Home ❤️' />
-        <NavBarIcon icon={<BsJoystick size='32' />} text='Clicker Game 🎮' />
-        <NavBarIcon icon={<BsLightbulbFill size='32' />} text='My Projects 📝' />
+        <NavBarIcon icon={<BsHouseFill size='32' />} text='Home ❤️' link='/' />
+        <NavBarIcon icon={<BsLightbulbFill size='32' />} text='My Projects 📝' link='/projects' />
+        <NavBarIcon icon={<BsJoystick size='32' />} text='Clicker Game 🎮' link='/game' />
       </div>
     </div>
   );
