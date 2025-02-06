@@ -8,11 +8,11 @@ const NavBar = () => {
     >
       <div className='relative top-0 left-0 h-screen w-28 m-0 
         flex flex-col
-        bg-tblack-950 text-twhite-d shadow-lg'
+        bg-tblack-950 text-twhite-d shadow-2xl'
       >
         <NavBarIcon icon={<BsHouseFill size='32' />} text='Home ❤️' link='/' />
         <NavBarIcon icon={<BsLightbulbFill size='32' />} text='My Projects 📝' link='/projects' />
-        <NavBarIcon icon={<BsJoystick size='32' />} text='Clicker Game 🎮' link='/game' />
+        {/* <NavBarIcon icon={<BsJoystick size='32' />} text='Clicker Game 🎮' link='/game' /> */}
       </div>
     </div>
   );

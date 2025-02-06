@@ -19,15 +19,22 @@ const Home = () => {
         <div className={styles.content}>
           <section className={styles.content2}>
             <h1>Who Am I? 🤔</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere alias corporis impedit similique et eos. Perspiciatis delectus nisi a id officia soluta nesciunt excepturi corrupti, qui eius aspernatur fugit repellat.</p>
+            <p>👋 Hey there! I’m a Computer Science & Law student at UNSW with a passion for building cool things with code. 
+              I love solving problems, whether it's debugging a tricky algorithm, crafting seamless user experiences, 
+              or figuring out how tech and law intersect in today’s world (that one is still WIP).
+              <br /><br />Right now, I'm diving deep into software engineering—exploring everything from full-stack development to AI. 
+              I thrive in environments where I get to learn, collaborate, and create impact with technology.
+              <br /><br />When I’m not coding, you’ll probably find me dissecting legal cases, playing around with side projects, 
+              or trying to perfect my coffee brewing skills ☕. Always keen to connect with like-minded people, so feel free to reach out!
+            </p>
           </section>
 
           <section className={styles.content1}>
             <h1>Featured Projects 💻</h1>
             <div className={styles.projectFrames}>
-              <ProjectFrame icon='/image/background.jpg' name='Test Project' desc='Test Project Desc'/>
-              <ProjectFrame icon='/image/background.jpg' name='Test Project 2' desc='Test Project Desc'/>
-              <ProjectFrame icon='/image/background.jpg' name='Test Project 3' desc='Test Project Desc'/>
+              <ProjectFrame icon='/image/background.jpg' name='Linguae Legend' desc='Wordle-inspired puzzle game infused with fantasy elements'/>
+              <ProjectFrame icon='/image/background2.jpg' name='Con Grazia' desc='Endless shooter game that comes with slimes in many flavours'/>
+              <ProjectFrame icon='/image/background.jpg' name='xChange' desc='Web-based University exchange program browser'/>
             </div>
           </section>
 
@@ -38,7 +45,9 @@ const Home = () => {
 
           <section className={styles.content1}>
             <h1>Socials 🍻</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere alias corporis impedit similique et eos. Perspiciatis delectus nisi a id officia soluta nesciunt excepturi corrupti, qui eius aspernatur fugit repellat.</p>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>LinkedIn</p>
           </section>
 
         </div>
