@@ -12,7 +12,7 @@ const NavBar = () => {
       >
         <NavBarIcon icon={<BsHouseFill size='32' />} text='Home ❤️' link='/' />
         <NavBarIcon icon={<BsLightbulbFill size='32' />} text='My Projects 📝' link='/projects' />
-        {/* <NavBarIcon icon={<BsJoystick size='32' />} text='Clicker Game 🎮' link='/game' /> */}
+        <NavBarIcon icon={<BsJoystick size='32' />} text='Clicker Game 🎮' link='/game' />
       </div>
     </div>
   );

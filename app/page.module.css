@@ -55,3 +55,10 @@
 .projectFrames {
     display: flex;
 }
+
+.socials {
+    display: flex;
+    margin: 10rem;
+    gap: 10rem;
+    
+}

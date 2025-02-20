@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './page.module.css';
 import NavBar from './components/NavBar';
 import ProjectFrame from './components/ProjectFrame';
+import { BsInstagram, BsFacebook, BsLinkedin } from 'react-icons/bs';
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
               <br /><br />Right now, I'm diving deep into software engineering—exploring everything from full-stack development to AI. 
               I thrive in environments where I get to learn, collaborate, and create impact with technology.
               <br /><br />When I’m not coding, you’ll probably find me dissecting legal cases, playing around with side projects, 
-              or trying to perfect my coffee brewing skills ☕. Always keen to connect with like-minded people, so feel free to reach out!
+              or trying to perfect my (non-existent) coffee brewing skills ☕. Always keen to connect with like-minded people, so feel free to reach out!
             </p>
           </section>
 
@@ -45,9 +46,11 @@ const Home = () => {
 
           <section className={styles.content1}>
             <h1>Socials 🍻</h1>
-            <p>Instagram</p>
-            <p>Facebook</p>
-            <p>LinkedIn</p>
+            <div className={styles.socials}>
+              <BsInstagram size='64' />
+              <BsFacebook size='64' />
+              <BsLinkedin size='64' />
+            </div>
           </section>
 
         </div>

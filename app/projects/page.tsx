@@ -16,7 +16,7 @@ const Home = () => {
               <ProjectFrame icon='/image/background.jpg' name='Linguae Legend' desc='Wordle-inspired puzzle game infused with fantasy elements'/>
               <ProjectFrame icon='/image/background2.jpg' name='Con Grazia' desc='Endless shooter game that comes with slimes in many flavours'/>
               <ProjectFrame icon='/image/background.jpg' name='[MISSION IMPROBABLE]' desc='Very challenging first-person shooter game'/>
-              <ProjectFrame icon='/image/background2.jpg' name="Diviners\' Gambit" desc='Online multiplayer card game'/>
+              <ProjectFrame icon='/image/background2.jpg' name="Diviners' Gambit" desc='Online multiplayer card game'/>
             </div>
           </section>
 
