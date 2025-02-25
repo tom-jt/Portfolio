@@ -17,14 +17,12 @@
     animation: revealTitle 500ms ease-out forwards;
     animation-delay: 300ms;
     top: -6rem;
-    rotate: -8deg;
 }
 
 @keyframes revealTitle {
     to {
         @apply text-twhite-d shadow-2xl;
         top: -2rem;
-        rotate: 0deg;
     }
 }
 
