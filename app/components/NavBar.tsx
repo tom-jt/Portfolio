@@ -2,7 +2,13 @@ import React from 'react';
 import { BsHouseFill, BsJoystick, BsLightbulbFill } from 'react-icons/bs';
 import NavBarIcon from './NavBarIcon';
 
-const NavBar = () => {
+export enum Page {
+  Home,
+  Projects,
+  Game
+}
+
+export const NavBar = ({ active = Page.Home }: { active: Page }) => {
   return (
     <div className='fixed z-50'
     >
@@ -10,12 +16,13 @@ const NavBar = () => {
         flex flex-col
         bg-tblack-950 text-twhite-d shadow-2xl'
       >
-        <NavBarIcon icon={<BsHouseFill size='32' />} text='Home ❤️' link='/' />
-        <NavBarIcon icon={<BsLightbulbFill size='32' />} text='My Projects 📝' link='/projects' />
-        <NavBarIcon icon={<BsJoystick size='32' />} text='Clicker Game 🎮' link='/game' />
+        <NavBarIcon icon={<BsHouseFill size='32' />} text='Home ❤️' link='/' 
+          active={active == Page.Home}/>
+        <NavBarIcon icon={<BsLightbulbFill size='32' />} text='My Projects 📝' 
+          link='/projects' active={active == Page.Projects} />
+        <NavBarIcon icon={<BsJoystick size='32' />} text='Clicker Game 🎮' 
+          link='/game' active={active == Page.Game} />
       </div>
     </div>
   );
 };
-
-export default NavBar;

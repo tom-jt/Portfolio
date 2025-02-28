@@ -5,12 +5,14 @@ import Link from 'next/link';
 interface IconProp {
   icon: any,
   text?: string,
-  link: string
+  link: string,
+  active: boolean
 }
 
-const NavBarIcon = ({ icon, text = 'Tooltip 💡', link }: IconProp) => {
+const NavBarIcon = ({ icon, text = 'Tooltip 💡', link, active }: IconProp) => {
   return (
-    <Link href={link} className={styles.icon + ' group'}>
+    <Link href={link} className={styles.iconBase + ' group ' + 
+      (active ? styles.iconActive : styles.iconHover)}>
       {icon}
       <span className={styles.tooltip + ' group-hover:scale-100'}>
         {text}

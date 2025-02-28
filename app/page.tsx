@@ -1,21 +1,20 @@
 import React from 'react';
 import styles from './page.module.css';
-import NavBar from './components/NavBar';
+import { NavBar, Page } from './components/NavBar';
 import ProjectFrame from './components/ProjectFrame';
 import { BsInstagram, BsFacebook, BsLinkedin } from 'react-icons/bs';
 
 const Home = () => {
   return (
     <main>
-      <NavBar />
-      <div className='pl-28 bg-teal-600'>
+      <NavBar active={Page.Home} />
+      <div className='pl-28 bg-teal-600 relative'>
         <div className={styles.title}>
           <h1 className={styles.titleText}>
             Hey There,<br />I'm Tom.
           </h1>
         </div>
 
-        <div className={styles.separator} />
 
         <div className={styles.content}>
           <section className={styles.content2}>
@@ -33,9 +32,9 @@ const Home = () => {
           <section className={styles.content1}>
             <h1>Featured Projects 💻</h1>
             <div className={styles.projectFrames}>
-              <ProjectFrame icon='/image/background.jpg' name='Linguae Legend' desc='Wordle-inspired puzzle game infused with fantasy elements'/>
-              <ProjectFrame icon='/image/background2.jpg' name='Con Grazia' desc='Endless shooter game that comes with slimes in many flavours'/>
-              <ProjectFrame icon='/image/background.jpg' name='xChange' desc='Web-based University exchange program browser'/>
+              <ProjectFrame icon='/image/background.jpg' name='Linguae Legend' desc='Wordle-inspired puzzle game infused with fantasy elements' id='linguae-legend'/>
+              <ProjectFrame icon='/image/background2.jpg' name='Con Grazia' desc='Endless shooter game that comes with slimes in many flavours' id='con-grazia'/>
+              <ProjectFrame icon='/image/background.jpg' name='xChange' desc='Web-based University exchange program browser' id='xchange'/>
             </div>
           </section>
 

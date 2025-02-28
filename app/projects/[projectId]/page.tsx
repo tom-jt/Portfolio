@@ -1,10 +1,20 @@
+import React from 'react';
+import { NavBar, Page } from '../../components/NavBar';
+
+interface ProjectProp {
+
+}
+
 async function Home({ params }: {
-  params: Promise<{ projectId: string }>
+  params: Promise<{ projectid: string }>
 }) {
-  const projectId = (await params).projectId;
+  const projectId = (await params).projectid;
   return (
     <main>
-      Project: {projectId}
+      <NavBar active={Page.Projects} />
+      <div className='pl-28'>
+        Project: {projectId}
+      </div>
     </main>
   );
 };
