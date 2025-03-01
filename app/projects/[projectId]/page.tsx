@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBar, Page } from '../../components/NavBar';
+import { NavBar, Page } from '@/app/components/NavBar';
 
 interface ProjectProp {
 

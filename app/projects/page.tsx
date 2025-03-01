@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
-import { NavBar, Page } from '../components/NavBar';
-import ProjectFrame from '../components/ProjectFrame';
+import { NavBar, Page } from '@/app/components/NavBar';
+import ProjectFrame from '@/app/components/ProjectFrame';
 
 const Home = () => {
   return (
