@@ -10,7 +10,7 @@ export enum Page {
 
 export const NavBar = ({ active = Page.Home }: { active: Page }) => {
   return (
-    <div className='fixed z-50'
+    <div className='fixed z-50 flex'
     >
       <div className='relative top-0 left-0 h-screen w-28 m-0 
         flex flex-col
@@ -23,6 +23,7 @@ export const NavBar = ({ active = Page.Home }: { active: Page }) => {
         <NavBarIcon icon={<BsJoystick size='32' />} text='Clicker Game 🎮' 
           link='/game' active={active == Page.Game} />
       </div>
+      <div className='bg-gradient-to-r from-tblack-950/50 to-tblack-950/0 w-4'/>
     </div>
   );
 };

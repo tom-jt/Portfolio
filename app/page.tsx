@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import { NavBar, Page } from './components/NavBar';
 import ProjectFrame from './components/ProjectFrame';
 import { BsInstagram, BsFacebook, BsLinkedin } from 'react-icons/bs';
+import { Separator, SeparatorReverse } from '@/app/components/Separator';
 
 const Home = () => {
   return (
@@ -15,6 +16,8 @@ const Home = () => {
           </h1>
         </div>
 
+        <div className='bg-tblack-950 w-full h-4'/>
+        <Separator />
 
         <div className={styles.content}>
           <section className={styles.content2}>
@@ -29,8 +32,11 @@ const Home = () => {
             </p>
           </section>
 
+          <SeparatorReverse />
+
           <section className={styles.content1}>
             <h1>Featured Projects 💻</h1>
+            <p>Here are some of the projects I'm most proud of 💖. Take a look 👀!</p>
             <div className={styles.projectFrames}>
               <ProjectFrame icon='/image/background.jpg' name='Linguae Legend' desc='Wordle-inspired puzzle game infused with fantasy elements' id='linguae-legend'/>
               <ProjectFrame icon='/image/background2.jpg' name='Con Grazia' desc='Endless shooter game that comes with slimes in many flavours' id='con-grazia'/>
@@ -38,10 +44,14 @@ const Home = () => {
             </div>
           </section>
 
+          <Separator />
+
           <section className={styles.content2}>
             <h1>Nice Curves</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere alias corporis impedit similique et eos. Perspiciatis delectus nisi a id officia soluta nesciunt excepturi corrupti, qui eius aspernatur fugit repellat.</p>
           </section>
+
+          <SeparatorReverse />
 
           <section className={styles.content1}>
             <h1>Socials 🍻</h1>
@@ -51,7 +61,6 @@ const Home = () => {
               <BsLinkedin size='64' />
             </div>
           </section>
-
         </div>
       </div>
 

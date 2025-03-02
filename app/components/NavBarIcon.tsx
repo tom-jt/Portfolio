@@ -14,9 +14,9 @@ const NavBarIcon = ({ icon, text = 'Tooltip 💡', link, active }: IconProp) => 
     <Link href={link} className={styles.iconBase + ' group ' + 
       (active ? styles.iconActive : styles.iconHover)}>
       {icon}
-      <h1 className={styles.tooltip + ' group-hover:scale-100'}>
+      <div className={styles.tooltip + ' group-hover:scale-100'}>
         {text}
-      </h1>
+      </div>
     </Link>
   )
 }

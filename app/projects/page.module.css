@@ -1,5 +1,4 @@
 .content section {
-    min-height: 600px;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -19,7 +18,7 @@
 }
 
 .projectFrames {
-    @apply flex flex-row overflow-visible justify-center
+    @apply flex flex-row overflow-x-auto overflow-y-visible
         w-full;
-    height: 45vh;
+    height: 50vh;
 }

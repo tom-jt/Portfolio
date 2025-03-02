@@ -12,7 +12,7 @@ interface ProjectProp {
 const ProjectFrame = ({ icon, name = 'Example Project', desc = 'Example Project Description', id }: ProjectProp) => {
   return (
     <Link href={'/projects/' + id} className={styles.frame}>
-      <img className={styles.img} src={icon}/>
+      <img className='bg-cover' src={icon}/>
       <div className='text-center absolute top-2/3 pb-2'>
         <h1 className='text-2xl'>{name}</h1>
         {desc}

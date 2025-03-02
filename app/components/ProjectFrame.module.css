@@ -1,15 +1,15 @@
 .frame {
-    @apply outline rounded min-w-96 max-w-96 h-80 mx-6 my-auto
+    @apply outline rounded mx-6 my-auto
     transition-all ease-in-out duration-200 cursor-pointer relative flex
     shadow-xl outline-teal-400 justify-center;
+    min-width: 30rem;
+    max-width: 30rem;
+    min-height: 24rem;
+    max-height: 24rem;
 }
 
 .frame:hover {
     @apply shadow-2xl shadow-black;
     rotate: 2deg;
     scale: 1.1;
-}
-    
-.img {
-    @apply h-full object-cover
 }

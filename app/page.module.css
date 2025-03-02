@@ -42,7 +42,7 @@
 
 .projectFrames {
     @apply flex;
-    height: 45vh;
+    height: 50vh;
 }
 
 .socials {
