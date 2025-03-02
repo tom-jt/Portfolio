@@ -1,0 +1,11 @@
+{
+    "projects": [
+        {
+            "id": "example",
+            "name": "Example Project",
+            "desc": "Example description of the project",
+            "img": "/image/someImage.png",
+            "langs": ["Java", "HTML/CSS"]
+        }
+    ]
+}
