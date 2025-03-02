@@ -13,10 +13,10 @@ const ProjectFrame = ({ icon, name = 'Example Project', desc = 'Example Project 
   return (
     <Link href={'/projects/' + id} className={styles.frame}>
       <img className={styles.img} src={icon}/>
-      <span className={styles.desc}>
-        <h1>{name}</h1>
-        <p>{desc}</p>
-      </span>
+      <div className='text-center absolute top-2/3 pb-2'>
+        <h1 className='text-2xl'>{name}</h1>
+        {desc}
+      </div>
     </Link>
   )
 }

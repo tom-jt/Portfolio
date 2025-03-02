@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <main>
       <NavBar active={Page.Projects} />
-      <div className='pl-28 bg-teal-600'>
+      <div className='pl-28'>
         <div className={styles.content}>
           <section className={styles.content2}>
             <h1>Games Catalogue 🕹️</h1>
@@ -26,7 +26,7 @@ const Home = () => {
             <div className={styles.projectFrames}>
               <ProjectFrame icon='/image/background.jpg' name='xChange' desc='Web-based University exchange program browser' id='xchange'/>
               <ProjectFrame icon='/image/background2.jpg' name='Toohak' desc='Kahoot knockoff' id='toohak'/>
-              <ProjectFrame icon='/image/background.jpg' name='Portfolio' desc='The very website you are on right now!' id=''/>
+              <ProjectFrame icon='/image/background.jpg' name='Portfolio' desc='The very website you are on right now!' id='portfolio'/>
             </div>
           </section>
         </div>

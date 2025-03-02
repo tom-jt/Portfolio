@@ -4,8 +4,9 @@
             "id": "example",
             "name": "Example Project",
             "desc": "Example description of the project",
-            "img": "/image/someImage.png",
-            "langs": ["Java", "HTML/CSS"]
+            "img": "/image/background.jpg",
+            "langs": ["Java", "HTML/CSS"],
+            "link": "http://www.google.com"
         }
     ]
 }

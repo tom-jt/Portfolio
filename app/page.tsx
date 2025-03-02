@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <main>
       <NavBar active={Page.Home} />
-      <div className='pl-28 bg-teal-600 relative'>
+      <div className='pl-28 bg-teal-600'>
         <div className={styles.title}>
           <h1 className={styles.titleText}>
             Hey There,<br />I'm Tom.

@@ -1,0 +1,58 @@
+.tealButton {
+  background-image: linear-gradient(144deg, 
+    theme('colors.teal.700'), theme('colors.teal.300'), 
+    theme('colors.teal.400') 50%, theme('colors.tblack.700'));
+}
+
+.redButton {
+  background-image: linear-gradient(144deg, 
+    theme('colors.tpink.900'), theme('colors.tpink.600'), 
+    theme('colors.tpink.700') 50%, theme('colors.tyellow.700'));
+}
+
+.fancyButton {
+  align-items: center;
+
+  border: 0;
+  border-radius: 8px;
+  box-shadow: theme('colors.tblack.800') 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.fancyButton:active,
+.fancyButton:hover {
+  outline: 0;
+}
+
+.fancyButton span {
+  background-color: theme('colors.tblack.d');
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.fancyButton:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .fancyButton {
+    min-width: 196px;
+  }
+}
+
+.langs div {
+  @apply rounded-full shadow-md px-3 min-w-16 text-center;
+}

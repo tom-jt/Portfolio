@@ -1,20 +1,13 @@
-.title {
-    @apply text-twhite-d justify-center;
-    height: 900px;
-    display: flex;
-    padding: 18rem 0;
-    background-image: url('/image/background2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -85px;
-}
-
 .content section {
     min-height: 600px;
-    padding: 100px 20vw;
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content section h1 {
+    margin-bottom: 1rem;
 }
 
 .content1 {
@@ -25,16 +18,8 @@
     @apply bg-teal-600;
 }
 
-.separator {
-    background-image: url('/image/separator.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 190px;
-    margin-top: -30px;
-}
-
 .projectFrames {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: 20px;
+    @apply flex flex-row overflow-visible justify-center
+        w-full;
+    height: 45vh;
 }
