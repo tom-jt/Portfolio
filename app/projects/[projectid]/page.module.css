@@ -56,3 +56,9 @@
 .langs div {
   @apply rounded-full shadow-md px-3 min-w-16 text-center;
 }
+
+.bgBlack {
+  background-image: linear-gradient(144deg, 
+  theme('colors.tblack.950'), theme('colors.tblack.900'), 
+  theme('colors.tblack.950') 50%, theme('colors.tblack.900'));
+}

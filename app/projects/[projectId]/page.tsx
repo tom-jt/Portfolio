@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import styles from './page.module.css';
 import Link from 'next/link';
 
-interface ProjectProp {
+export interface ProjectProp {
   id: string,
   name: string,
   desc: string,
@@ -24,11 +24,15 @@ const langTagsLookup = {
 
 const projects = projectsJson.projects as ProjectProp[];
 
+export function getProject(id: string): ProjectProp | undefined {
+  return projects.find(e => e.id == id);
+}
+
 async function Home({ params }: {
   params: Promise<{ projectid: string }>
 }) {
   const projectId = (await params).projectid;
-  const p = projects.find(e => e.id == projectId);
+  const p = getProject(projectId);
 
   if (!p) {
     return notFound();
@@ -50,9 +54,9 @@ async function Home({ params }: {
   return (
     <main>
       <NavBar active={Page.Projects} />
-      <div className='pl-28 flex h-full absolute'>
+      <div className={styles.bgBlack + ' pl-28 flex w-full h-full absolute'}>
         <div className='w-1/2 flex p-14'>
-          <img src={p.img} alt='Project Image' className='m-auto' />
+          <img src={p.img} alt='Project Image' className='object-contain' />
         </div>
         <div className='w-1/2 flex'>
           <div className='m-auto w-full h-1/2 flex flex-col gap-4 justify-between'>

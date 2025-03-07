@@ -9,12 +9,12 @@ interface IconProp {
   active: boolean
 }
 
-const NavBarIcon = ({ icon, text = 'Tooltip 💡', link, active }: IconProp) => {
+const NavBarIcon = ({ icon, text = 'Tooltip', link, active }: IconProp) => {
   return (
-    <Link href={link} className={styles.iconBase + ' group ' + 
-      (active ? styles.iconActive : styles.iconHover)}>
+    <Link href={link} className={styles.iconBase + ' ' +
+      (active ? styles.iconActive : '')}>
       {icon}
-      <div className={styles.tooltip + ' group-hover:scale-100'}>
+      <div>
         {text}
       </div>
     </Link>

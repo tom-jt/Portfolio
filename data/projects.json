@@ -7,6 +7,30 @@
             "img": "/image/background.jpg",
             "langs": ["Java", "HTML/CSS"],
             "link": "http://www.google.com"
+        },
+        {
+            "id": "linguae-legend",
+            "name": "Linguae Legend",
+            "desc": "Wordle-inspired rogue-like with a hint of Dark Souls",
+            "img": "/image/linguae-legend.webp",
+            "langs": ["C#"],
+            "link": "https://gamejolt.com/games/linguae_legend/809080"
+        },
+        {
+            "id": "con-grazia",
+            "name": "Con Grazia",
+            "desc": "Endless shoot 'em up with a delectable colouration of slimes",
+            "img": "/image/con-grazia.webp",
+            "langs": ["C#"],
+            "link": "https://gamejolt.com/games/con_grazia/940560"
+        },
+        {
+            "id": "mission-improbable",
+            "name": "Mission Improbable",
+            "desc": "Challenging first-person shooter with hand-crafted environments",
+            "img": "/image/mission-improbable.webp",
+            "langs": ["C#"],
+            "link": "https://gamejolt.com/games/mission-improbable-challenging/679830"
         }
     ]
 }
