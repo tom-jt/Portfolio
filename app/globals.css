@@ -14,18 +14,8 @@
   }
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('@/app/fonts/Inter.ttf');
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('@/app/fonts/Poppins-Regular.ttf');
-}
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins);
   color: var(--foreground);
   background: var(--background);
   font-size: larger;
@@ -36,7 +26,26 @@ body {
 }
 
 h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter);
   font-size: 3rem;
   font-weight: bold;
+}
+
+.dynamicHeader h1 {
+  animation: infiniteScroll 15s linear infinite;
+  background: url('/image/background3.jpg') 50% 50%;
+  background-size: 50%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes infiniteScroll {
+  0% {
+      background-position-x: 50%;
+  }
+
+  to {
+      background-position-x: 150%;
+  }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './NavBarSocial.module.css';
+import Link from 'next/link';
 
 interface SocialProp {
   icon: any,
@@ -8,9 +9,9 @@ interface SocialProp {
 
 const NavBarSocial = ({ icon, link }: SocialProp) => {
   return (
-    <a href={link} className={styles.icon}>
+    <Link href={link} className={styles.icon}>
       {icon}
-    </a>
+    </Link>
   )
 }
 

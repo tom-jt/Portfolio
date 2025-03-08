@@ -17,9 +17,13 @@ export interface ProjectProp {
 const langTagsLookup = {
   'Java': 'bg-tyellow-900',
   'HTML/CSS': 'bg-tgreen-800',
-  'C#': 'bg-tpink-800',
-  'Tailwind': 'bg-tblue-800',
-  'JavaScript/TypeScript': 'bg-tyellow-700',
+  'C#': 'bg-tpink-700',
+  'Tailwind': 'bg-purple-600',
+  'JavaScript': 'bg-tyellow-700',
+  'TypeScript': 'bg-cyan-700',
+  'Next.JS': 'bg-red-700',
+  'React': 'bg-orange-600',
+  'Unity': 'bg-slate-500'
 }
 
 const projects = projectsJson.projects as ProjectProp[];
@@ -60,11 +64,12 @@ async function Home({ params }: {
         </div>
         <div className='w-1/2 flex'>
           <div className='m-auto w-full h-1/2 flex flex-col gap-4 justify-between'>
-            <h1>
-              {p.name}
-              <div className='bg-twhite-d h-1 rounded mr-14' />
-            </h1>
-
+            <div className='dynamicHeader'>
+              <h1>
+                {p.name}
+                <div className='bg-twhite-d h-1 rounded mr-14' />
+              </h1>
+            </div>
             <div className={styles.langs + ' flex flex-row gap-4'}>
               {langTags}
             </div>
@@ -84,7 +89,7 @@ async function Home({ params }: {
               <button className={styles.fancyButton + ' group ' + styles.tealButton} role="button">
                 <h1 className='bg-tblack-d px-4 py-4 rounded-md w-full text-xl
                   h-full transition-all duration-300 group-hover:bg-transparent'>
-                  <a href={p.link}>Take Me There!</a>
+                  <Link href={p.link}>Take Me There!</Link>
                 </h1>
               </button>
             </div>

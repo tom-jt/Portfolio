@@ -13,7 +13,7 @@
             "name": "Linguae Legend",
             "desc": "Wordle-inspired rogue-like with a hint of Dark Souls",
             "img": "/image/linguae-legend.webp",
-            "langs": ["C#"],
+            "langs": ["Unity", "C#"],
             "link": "https://gamejolt.com/games/linguae_legend/809080"
         },
         {
@@ -21,7 +21,7 @@
             "name": "Con Grazia",
             "desc": "Endless shoot 'em up with a delectable colouration of slimes",
             "img": "/image/con-grazia.webp",
-            "langs": ["C#"],
+            "langs": ["Unity", "C#"],
             "link": "https://gamejolt.com/games/con_grazia/940560"
         },
         {
@@ -29,8 +29,16 @@
             "name": "Mission Improbable",
             "desc": "Challenging first-person shooter with hand-crafted environments",
             "img": "/image/mission-improbable.webp",
-            "langs": ["C#"],
+            "langs": ["Unity", "C#"],
             "link": "https://gamejolt.com/games/mission-improbable-challenging/679830"
+        },
+        {
+            "id": "xchange",
+            "name": "xChange",
+            "desc": "UNSW exchange program offerings finder and browser",
+            "img": "/image/xChange.png",
+            "langs": ["HTML/CSS", "Tailwind", "Next.JS", "React", "TypeScript"],
+            "link": "https://github.com/abe123442/xChange"
         }
     ]
 }

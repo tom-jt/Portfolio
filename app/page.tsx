@@ -17,7 +17,7 @@ const Home = () => {
 
         <Separator />
 
-        <div className={styles.content}>
+        <div className={styles.content + ' dynamicHeader'}>
           <section className={styles.content2}>
             <h1>WHO AM I?</h1>
             <p>👋 Hey there! I’m a Computer Science & Law student at UNSW with a passion for building cool things with code. 

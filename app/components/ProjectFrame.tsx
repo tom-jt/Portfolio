@@ -16,10 +16,10 @@ const ProjectFrame = ({ id }: ProjectFrameProp) => {
 
   return (
     <Link href={'/projects/' + id} className={styles.frame}>
-      <img className='object-cover' src={p.img}/>
-      <div className='text-center absolute bottom-2 py-4 w-11/12 bg-tblack-900/60 rounded-3xl'>
+      <img className='object-cover' alt='Thumbnail' src={p.img} />
+      <div className=' text-center absolute bottom-2 p-2 w-11/12 bg-tblack-900/60 rounded-3xl flex flex-col items-center'>
         <h1 className='text-2xl'>{p.name}</h1>
-        {p.desc}
+        <span className='w-96'>{p.desc}</span>
       </div>
     </Link>
   )

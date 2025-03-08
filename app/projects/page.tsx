@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './page.module.css';
 import { NavBar, Page } from '@/app/components/NavBar';
 import ProjectFrame from '@/app/components/ProjectFrame';
-import { Separator, SeparatorReverse } from '@/app/components/Separator';
+import { SeparatorReverse } from '@/app/components/Separator';
 
 const Home = () => {
   return (
     <main>
       <NavBar active={Page.Projects} />
-      <div className='pl-28 bg-teal-600'>
+      <div className='pl-28 bg-teal-600 dynamicHeader'>
         <div className={styles.content}>
           <section className={styles.content2}>
             <h1>Games Catalogue</h1>
