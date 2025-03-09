@@ -2,8 +2,17 @@ import React from 'react';
 import styles from './page.module.css';
 import { NavBar, Page } from './components/NavBar';
 import ProjectFrame from './components/ProjectFrame';
-import { Separator, SeparatorReverse } from '@/app/components/Separator';
+import { Separator, SeparatorReverse } from './components/Separator';
 import Image from 'next/image';
+import LanguageIcon from './components/LanguageIcon';
+import DevC from 'devicons-react/icons/COriginal';
+import DevCS from 'devicons-react/icons/CsharpOriginal';
+import DevJava from 'devicons-react/icons/JavaOriginal';
+import DevUnity from 'devicons-react/icons/UnityOriginal';
+import DevNext from 'devicons-react/icons/NextjsOriginal';
+import DevTS from 'devicons-react/icons/TypescriptPlain';
+import DevTW from 'devicons-react/icons/TailwindcssOriginal';
+import DevPostSQL from 'devicons-react/icons/PostgresqlOriginal';
 
 const Home = () => {
   return (
@@ -23,14 +32,22 @@ const Home = () => {
             <h1>WHO AM I?</h1>
             <div className='flex px-20 mt-8 gap-16 items-center'>
               <Image src='/image/background.jpg' alt='About me' className='object-fit w-1/2 rounded-2xl' width='1920' height='1080' />
-              <p className='w-1/2'>👋 Hey there! I’m a Computer Science & Law student at UNSW with a passion for building cool things with code. 
-                I love solving problems, whether it’s debugging a tricky algorithm, crafting seamless user experiences, 
-                or figuring out how tech and law intersect in today’s world (that one is still WIP).
-                <br /><br />Right now, I’m diving deep into software engineering—exploring everything from full-stack development to AI. 
-                I thrive in environments where I get to learn, collaborate, and create impact with technology.
-                <br /><br />When I’m not coding, you’ll probably find me dissecting legal cases, playing around with side projects, 
-                or trying to perfect my (non-existent) coffee brewing skills ☕. Always keen to connect with like-minded people, so feel free to reach out!
-              </p>
+              <div className='w-1/2'>
+                <p>👋 Hey there! I’m a Computer Science & Law student at UNSW with a passion for building cool things with code 🧋. 
+                  I take every new project that I work on as an opportunity to dabble into something new, whether that be a
+                  programming language or new software infrastructure 🤖. Here's a nice list of things I've worked with the most ☺️!
+                </p>
+                <div className='mt-4 flex gap-8 h-16'>
+                  <LanguageIcon icon={<DevC size='4rem' />} link='' desc='C' />
+                  <LanguageIcon icon={<DevCS size='4rem' />} link='' desc='C#' />
+                  <LanguageIcon icon={<DevJava size='4rem' />} link='' desc='Java' />
+                  <LanguageIcon icon={<DevUnity size='4rem' />} link='' desc='Unity' />
+                  <LanguageIcon icon={<DevNext size='4rem' />} link='' desc='Next.js' />
+                  <LanguageIcon icon={<DevTS size='4rem' />} link='' desc='TypeScript' />
+                  <LanguageIcon icon={<DevTW size='4rem' />} link='' desc='TailwindCSS' />
+                  <LanguageIcon icon={<DevPostSQL size='4rem' />} link='' desc='PostgreSQL' />
+                </div>
+              </div>
             </div>
 
           </section>

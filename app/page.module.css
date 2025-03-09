@@ -1,6 +1,6 @@
 .title {
     @apply justify-center align-middle h-full flex bg-no-repeat relative;
-    padding: 15vh 0;
+    padding: 8vh 0;
     font-size: 15rem;
     animation: revealTitle 0.8s ease-in-out forwards;
     animation-delay: 500ms;
