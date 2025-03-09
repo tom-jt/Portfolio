@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsHouseFill, BsJoystick, BsLightbulbFill, 
-  BsInstagram, BsFacebook, BsLinkedin } from 'react-icons/bs';
+  BsInstagram, BsFacebook, BsLinkedin, BsGithub } from 'react-icons/bs';
 import NavBarIcon from './NavBarIcon';
 import NavBarSocial from './NavBarSocial';
 
@@ -26,6 +26,8 @@ export const NavBar = ({ active = Page.Home }: { active: Page }) => {
 
         <div className='mx-auto flex flex-col gap-4 w-8 items-center
           my-4'>
+          <NavBarSocial icon={<BsGithub size='32' />} 
+            link='https://github.com/tom-jt' />
           <NavBarSocial icon={<BsInstagram size='32' />} 
             link='https://www.instagram.com/tom.liu.jt' />
           <NavBarSocial icon={<BsFacebook size='32' />} 

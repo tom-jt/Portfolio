@@ -65,19 +65,17 @@ async function Home({ params }: {
             </div>
 
             <div className='flex justify-between'>
-              <button className={styles.fancyButton + ' group ' + styles.redButton} role="button">
-                <h1 className='bg-tblack-d px-4 py-4 rounded-md w-full text-xl
-                  h-full transition-all duration-300 group-hover:bg-transparent'>
-                  <Link href='/projects'>Back to Projects</Link>
+              <Link href='/projects' className={styles.fancyButton + ' ' + styles.redButton}>
+                <h1>
+                  Back to Projects
                 </h1>
-              </button>
+              </Link>
 
-              <button className={styles.fancyButton + ' group ' + styles.tealButton} role="button">
-                <h1 className='bg-tblack-d px-4 py-4 rounded-md w-full text-xl
-                  h-full transition-all duration-300 group-hover:bg-transparent'>
-                  <Link href={p.link}>Take Me There!</Link>
+              <Link href={p.link} className={styles.fancyButton + ' ' + styles.tealButton}>
+                <h1>
+                  Take Me There!
                 </h1>
-              </button>
+              </Link>
             </div>
 
           </div>
