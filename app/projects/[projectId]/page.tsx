@@ -1,21 +1,12 @@
 import React from 'react';
 import { NavBar, Page } from '@/app/components/NavBar';
-import projectsJson from '@/data/projects.json';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import * as data from '@/data/dataFetch';
 
-export interface ProjectProp {
-  id: string,
-  name: string,
-  desc: string,
-  img: string,
-  langs: string[],
-  link: string
-}
-
-const langTagsLookup = {
+const langTagsLookup: any = {
   'Java': 'bg-tyellow-900',
   'HTML/CSS': 'bg-tgreen-800',
   'C#': 'bg-tpink-700',
@@ -27,24 +18,18 @@ const langTagsLookup = {
   'Unity': 'bg-slate-500'
 }
 
-const projects = projectsJson.projects as ProjectProp[];
-
-export function getProject(id: string): ProjectProp | undefined {
-  return projects.find(e => e.id == id);
-}
-
 async function Home({ params }: {
   params: Promise<{ projectid: string }>
 }) {
   const projectId = (await params).projectid;
-  const p = getProject(projectId);
+  const p: data.ProjectProp | undefined = data.getProject(projectId);
 
   if (!p) {
     return notFound();
   }
 
   const langs = [... new Set(p.langs)];
-  const langTags = [];
+  const langTags: React.JSX.Element[] = [];
   for (let i = 0; i < langs.length; i++) {
     const l = langs[i];
     const col = (langTagsLookup as any)[l];
@@ -61,7 +46,7 @@ async function Home({ params }: {
       <NavBar active={Page.Projects} />
       <div className={styles.bgBlack + ' pl-28 flex w-full h-full absolute gap-14'}>
         <div className='w-1/2 pl-14 my-auto'>
-          <Image src={p.img} alt='Project Image' className='object-contain rounded-2xl' width='500' height='281'/>
+          <Image src={p.img} alt='Project Image' className='object-contain rounded-2xl' width='1920' height='1080'/>
         </div>
         <div className='pr-14 w-1/2 flex my-48'>
           <div className='w-full h-full flex flex-col gap-4 justify-between'>

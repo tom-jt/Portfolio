@@ -22,7 +22,7 @@ const Home = () => {
           <section className={styles.content2}>
             <h1>WHO AM I?</h1>
             <div className='flex px-20 mt-8 gap-16 items-center'>
-              <Image src='/image/background.jpg' alt='About me' className='object-fit w-1/2 rounded-2xl' width='3480' height='2400' />
+              <Image src='/image/background.jpg' alt='About me' className='object-fit w-1/2 rounded-2xl' width='1920' height='1080' />
               <p className='w-1/2'>👋 Hey there! I’m a Computer Science & Law student at UNSW with a passion for building cool things with code. 
                 I love solving problems, whether it’s debugging a tricky algorithm, crafting seamless user experiences, 
                 or figuring out how tech and law intersect in today’s world (that one is still WIP).
