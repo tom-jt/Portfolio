@@ -25,7 +25,7 @@ const Home = () => {
 
           <section className={styles.content2}>
             <h1>Games Catalogue</h1>
-            <p>Here lies a collection of all the games I've made using the Unity Game Engine 🕹️.</p>
+            <p>Here lies a collection of all the games I’ve made using the Unity Game Engine 🕹️.</p>
             <div className='bg-teal-700/50 w-full h-4 mt-10'/>
             <div className={styles.projectFrames + ' bg-teal-700'}>
               <ProjectFrame id='linguae-legend'/>

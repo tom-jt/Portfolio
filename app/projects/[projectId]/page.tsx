@@ -4,6 +4,7 @@ import projectsJson from '@/data/projects.json';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export interface ProjectProp {
   id: string,
@@ -44,7 +45,7 @@ async function Home({ params }: {
 
   const langs = [... new Set(p.langs)];
   const langTags = [];
-  for (var i = 0; i < langs.length; i++) {
+  for (let i = 0; i < langs.length; i++) {
     const l = langs[i];
     const col = (langTagsLookup as any)[l];
 
@@ -60,7 +61,7 @@ async function Home({ params }: {
       <NavBar active={Page.Projects} />
       <div className={styles.bgBlack + ' pl-28 flex w-full h-full absolute gap-14'}>
         <div className='w-1/2 pl-14 my-auto'>
-          <img src={p.img} alt='Project Image' className='object-contain rounded-2xl' />
+          <Image src={p.img} alt='Project Image' className='object-contain rounded-2xl' width='500' height='281'/>
         </div>
         <div className='pr-14 w-1/2 flex my-48'>
           <div className='w-full h-full flex flex-col gap-4 justify-between'>

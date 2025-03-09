@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import { NavBar, Page } from './components/NavBar';
 import ProjectFrame from './components/ProjectFrame';
 import { Separator, SeparatorReverse } from '@/app/components/Separator';
+import Image from 'next/image';
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       <div className='pl-28 bg-teal-500'>
         <div className={styles.bgBlack}>
           <h1 className={styles.title}>
-            HI THERE,<br />I'M TOM.
+            HI THERE,<br />I’M TOM.
           </h1>
         </div>
 
@@ -21,11 +22,11 @@ const Home = () => {
           <section className={styles.content2}>
             <h1>WHO AM I?</h1>
             <div className='flex px-20 mt-8 gap-16 items-center'>
-              <img src='/image/background.jpg' alt='About me image' className='object-fit w-1/2 rounded-2xl' />
+              <Image src='/image/background.jpg' alt='About me' className='object-fit w-1/2 rounded-2xl' width='3480' height='2400' />
               <p className='w-1/2'>👋 Hey there! I’m a Computer Science & Law student at UNSW with a passion for building cool things with code. 
-                I love solving problems, whether it's debugging a tricky algorithm, crafting seamless user experiences, 
+                I love solving problems, whether it’s debugging a tricky algorithm, crafting seamless user experiences, 
                 or figuring out how tech and law intersect in today’s world (that one is still WIP).
-                <br /><br />Right now, I'm diving deep into software engineering—exploring everything from full-stack development to AI. 
+                <br /><br />Right now, I’m diving deep into software engineering—exploring everything from full-stack development to AI. 
                 I thrive in environments where I get to learn, collaborate, and create impact with technology.
                 <br /><br />When I’m not coding, you’ll probably find me dissecting legal cases, playing around with side projects, 
                 or trying to perfect my (non-existent) coffee brewing skills ☕. Always keen to connect with like-minded people, so feel free to reach out!
@@ -38,7 +39,7 @@ const Home = () => {
 
           <section className={styles.content1}>
             <h1>Featured Projects</h1>
-            <p>Here are some of the projects I'm most proud of 💖. Take a look 👀!</p>
+            <p>Here are some of the projects I’m most proud of 💖. Take a look 👀!</p>
             <div className={styles.projectFrames}>
               <ProjectFrame id='linguae-legend'/>
               <ProjectFrame id='con-grazia'/>
