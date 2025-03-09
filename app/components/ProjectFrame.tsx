@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ProjectFrame.module.css';
 import Link from 'next/link';
-import { getProject } from '@/app/projects/[projectid]/page';
+import { getProject } from '@/app/projects/\[projectid\]/page';
 
 interface ProjectFrameProp {
   id: string
