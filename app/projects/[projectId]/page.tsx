@@ -58,16 +58,16 @@ async function Home({ params }: {
   return (
     <main>
       <NavBar active={Page.Projects} />
-      <div className={styles.bgBlack + ' pl-28 flex w-full h-full absolute'}>
-        <div className='w-1/2 flex p-14'>
-          <img src={p.img} alt='Project Image' className='object-contain' />
+      <div className={styles.bgBlack + ' pl-28 flex w-full h-full absolute gap-14'}>
+        <div className='w-1/2 pl-14 my-auto'>
+          <img src={p.img} alt='Project Image' className='object-contain rounded-2xl' />
         </div>
-        <div className='w-1/2 flex'>
-          <div className='m-auto w-full h-1/2 flex flex-col gap-4 justify-between'>
+        <div className='pr-14 w-1/2 flex my-48'>
+          <div className='w-full h-full flex flex-col gap-4 justify-between'>
             <div className='dynamicHeader'>
               <h1>
                 {p.name}
-                <div className='bg-twhite-d h-1 rounded mr-14' />
+                <div className='bg-twhite-d h-1 rounded' />
               </h1>
             </div>
             <div className={styles.langs + ' flex flex-row gap-4'}>
@@ -78,7 +78,7 @@ async function Home({ params }: {
               {p.desc}
             </div>
 
-            <div className='mr-14 flex justify-between'>
+            <div className='flex justify-between'>
               <button className={styles.fancyButton + ' group ' + styles.redButton} role="button">
                 <h1 className='bg-tblack-d px-4 py-4 rounded-md w-full text-xl
                   h-full transition-all duration-300 group-hover:bg-transparent'>

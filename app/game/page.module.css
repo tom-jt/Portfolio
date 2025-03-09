@@ -1,57 +1,11 @@
-.title {
-    @apply text-twhite-d justify-center;
-    height: 900px;
-    display: flex;
-    padding: 18rem 0;
-    background-image: url('/image/background2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -85px;
+.bgBlack {
+    background-image: linear-gradient(144deg, 
+      theme('colors.tblack.950'), theme('colors.tblack.900'), 
+      theme('colors.tblack.950') 50%, theme('colors.tblack.900'));
 }
 
-.titleText {
-    @apply m-auto p-20 relative text-center text-transparent 
-    outline outline-8;
-    font-size: calc(3 * (1vw + 1vh));
-    font-weight: initial;
-    animation: revealTitle 500ms ease-out forwards;
-    animation-delay: 300ms;
-    top: -6rem;
-    rotate: -8deg;
-}
-
-@keyframes revealTitle {
-    to {
-        @apply text-twhite-d shadow-2xl;
-        top: -2rem;
-        rotate: 0deg;
-    }
-}
-
-.content section {
-    min-height: 600px;
-    padding: 100px 20vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.content1 {
-    @apply bg-tblack-d;
-}
-
-.content2 {
-    @apply bg-teal-600;
-}
-
-.separator {
-    background-image: url('/image/separator.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 190px;
-    margin-top: -30px;
-}
-
-.projectFrames {
-    display: flex;
+.bgTeal {
+    background-image: linear-gradient(144deg, 
+      theme('colors.teal.600'), theme('colors.teal.600'), 
+      theme('colors.teal.500') 50%, theme('colors.teal.700'));
 }

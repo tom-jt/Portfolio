@@ -8,8 +8,6 @@ const Home = () => {
       <div className='pl-28 bg-teal-600'>
 
       </div>
-
-
     </main>
   );
 };

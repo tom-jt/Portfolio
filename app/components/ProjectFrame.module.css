@@ -12,3 +12,29 @@
     scale: 1.1;
     width: 40rem;
 }
+
+.textBox {
+    @apply text-center absolute p-2 w-11/12 min-w-full min-h-full bg-tblack-900/60 bottom-0
+        rounded-xl flex flex-col items-center transition-all duration-200 justify-center;
+        backdrop-filter: blur(5px);
+}
+
+.textBox span {
+    @apply max-h-0 collapse transition-all duration-100;
+}
+
+.frame:hover .textBox span {
+    @apply max-h-full visible;
+}
+
+.textBox h1 {
+    @apply text-5xl transition-all duration-100 text-nowrap;
+}
+
+.frame:hover .textBox h1 {
+    @apply text-2xl;
+}
+
+.frame:hover .textBox {
+    @apply min-h-0 min-w-0 bottom-2;
+}

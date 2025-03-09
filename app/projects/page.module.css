@@ -6,7 +6,7 @@
 }
 
 .projectFrames {
-    @apply flex flex-row overflow-x-hidden justify-center
+    @apply flex flex-row overflow-x-hidden overflow-y-hidden justify-center
         w-full;
     height: 50vh;
 }
