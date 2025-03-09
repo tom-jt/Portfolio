@@ -1,11 +1,5 @@
 .bgBlack {
-    background-image: linear-gradient(144deg, 
-      theme('colors.tblack.950'), theme('colors.tblack.900'), 
-      theme('colors.tblack.950') 50%, theme('colors.tblack.900'));
-}
-
-.bgTeal {
-    background-image: linear-gradient(144deg, 
-      theme('colors.teal.600'), theme('colors.teal.600'), 
-      theme('colors.teal.500') 50%, theme('colors.teal.700'));
+  background-image: linear-gradient(144deg, 
+  theme('colors.teal.800'), theme('colors.tblack.900'), 
+  theme('colors.tblack.950') 50%, theme('colors.teal.700'));
 }

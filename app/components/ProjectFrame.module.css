@@ -1,16 +1,16 @@
 .frame {
-    @apply outline outline-4 rounded-xl mx-6 my-auto
+    @apply outline outline-8 rounded-xl mx-6 my-auto
     transition-all duration-300 cursor-pointer relative flex
     shadow-xl outline-teal-400 justify-center;
     transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
-    width: 30rem;
+    width: 24rem;
     height: 24rem;
 }
 
 .frame:hover {
     @apply shadow-2xl shadow-black;
     scale: 1.1;
-    width: 40rem;
+    width: 35rem;
 }
 
 .textBox {
@@ -28,7 +28,7 @@
 }
 
 .textBox h1 {
-    @apply text-5xl transition-all duration-100 text-nowrap;
+    @apply text-5xl transition-all duration-100;
 }
 
 .frame:hover .textBox h1 {
