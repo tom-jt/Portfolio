@@ -18,6 +18,7 @@ const Home = () => {
               <ProjectFrame id='xchange'/>
               <ProjectFrame id='toohak'/>
               <ProjectFrame id='portfolio'/>
+              <ProjectFrame id='tributary'/>
             </div>
           </section>
 

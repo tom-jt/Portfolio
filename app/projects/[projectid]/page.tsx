@@ -10,12 +10,15 @@ const langTagsLookup: any = {
   'Java': 'bg-tyellow-900',
   'HTML/CSS': 'bg-tgreen-800',
   'C#': 'bg-tpink-700',
-  'Tailwind': 'bg-purple-600',
+  'Tailwind': 'bg-tblue-600',
   'JavaScript': 'bg-tyellow-700',
   'TypeScript': 'bg-cyan-700',
   'Next.JS': 'bg-red-700',
   'React': 'bg-orange-600',
-  'Unity': 'bg-slate-500'
+  'Unity': 'bg-slate-500',
+  'Gradle': 'bg-tblue-700',
+  'Mirror': 'bg-tblack-950',
+  'Bootstrap': 'bg-purple-600'
 }
 
 async function Home({ params }: {

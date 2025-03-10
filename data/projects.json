@@ -33,12 +33,44 @@
             "link": "https://gamejolt.com/games/mission-improbable-challenging/679830"
         },
         {
+            "id": "tributary",
+            "name": "Tributary",
+            "desc": "A distributed event streaming platform library and API inspired by Apache Kafka",
+            "img": "/image/tributary.png",
+            "langs": ["Java", "Gradle"],
+            "link": "https://github.com/abe123442/xChange"
+        },
+        {
             "id": "xchange",
             "name": "xChange",
             "desc": "UNSW exchange program offerings finder and browser",
             "img": "/image/xChange.png",
             "langs": ["HTML/CSS", "Tailwind", "Next.JS", "React", "TypeScript"],
             "link": "https://github.com/abe123442/xChange"
+        },
+        {
+            "id": "diviners-gambit",
+            "name": "Diviners' Gambit",
+            "desc": "Simple multiplayer card game inspired by RPS",
+            "img": "/image/diviners-gambit.png",
+            "langs": ["Unity", "C#", "Mirror"],
+            "link": "https://gamejolt.com/games/diviners-gambit/978448"
+        },
+        {
+            "id": "portfolio",
+            "name": "My Portfolio",
+            "desc": "A collection of all the project's I've made",
+            "img": "/image/portfolio.png",
+            "langs": ["HTML/CSS", "Tailwind", "Next.JS", "React", "Bootstrap"],
+            "link": "/"
+        },
+        {
+            "id": "toohak",
+            "name": "Toohak",
+            "desc": "Kahoot-inspired online interactive quiz game",
+            "img": "/image/diviners-gambit.png",
+            "langs": ["Javascript"],
+            "link": "https://gamejolt.com/games/diviners-gambit/978448"
         }
     ]
 }

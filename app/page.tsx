@@ -35,17 +35,17 @@ const Home = () => {
               <div className='w-1/2'>
                 <p>👋 Hey there! I’m a Computer Science & Law student at UNSW with a passion for building cool things with code 🧋. 
                   I take every new project that I work on as an opportunity to dabble into something new, whether that be a
-                  programming language or new software infrastructure 🤖. Here's a nice list of things I've worked with the most ☺️!
+                  programming language or new software infrastructure 🤖. Here's a list of things I've worked with the most ⌨️!
                 </p>
-                <div className='mt-4 flex gap-8 h-16'>
-                  <LanguageIcon icon={<DevC size='4rem' />} link='' desc='C' />
-                  <LanguageIcon icon={<DevCS size='4rem' />} link='' desc='C#' />
-                  <LanguageIcon icon={<DevJava size='4rem' />} link='' desc='Java' />
-                  <LanguageIcon icon={<DevUnity size='4rem' />} link='' desc='Unity' />
-                  <LanguageIcon icon={<DevNext size='4rem' />} link='' desc='Next.js' />
-                  <LanguageIcon icon={<DevTS size='4rem' />} link='' desc='TypeScript' />
-                  <LanguageIcon icon={<DevTW size='4rem' />} link='' desc='TailwindCSS' />
-                  <LanguageIcon icon={<DevPostSQL size='4rem' />} link='' desc='PostgreSQL' />
+                <div className='mt-16 flex gap-8 h-16'>
+                  <LanguageIcon icon={<DevC size='4rem' />} link='https://en.wikipedia.org/wiki/C_(programming_language)' desc='C' />
+                  <LanguageIcon icon={<DevCS size='4rem' />} link='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)' desc='C#' />
+                  <LanguageIcon icon={<DevJava size='4rem' />} link='https://www.java.com/en/' desc='Java' />
+                  <LanguageIcon icon={<DevUnity size='4rem' />} link='https://unity.com/' desc='Unity' />
+                  <LanguageIcon icon={<DevNext size='4rem' />} link='https://nextjs.org/' desc='Next.js' />
+                  <LanguageIcon icon={<DevTS size='4rem' />} link='https://nextjs.org/' desc='TypeScript' />
+                  <LanguageIcon icon={<DevTW size='4rem' />} link='https://tailwindcss.com/' desc='TailwindCSS' />
+                  <LanguageIcon icon={<DevPostSQL size='4rem' />} link='https://www.postgresql.org/' desc='PostgreSQL' />
                 </div>
               </div>
             </div>
