@@ -16,7 +16,7 @@ const Home = () => {
             <div className='bg-tblack-950/50 w-full h-4 mt-10'/>
             <div className={styles.projectFrames + ' bg-tblack-950'}>
               <ProjectFrame id='xchange'/>
-              <ProjectFrame id='toohak'/>
+              {/* <ProjectFrame id='toohak'/> */}
               <ProjectFrame id='portfolio'/>
               <ProjectFrame id='tributary'/>
             </div>
