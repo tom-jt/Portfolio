@@ -4,11 +4,10 @@ import Link from 'next/link';
 
 interface IconProp {
   icon: any,
-  link: string,
-  desc: string
+  link: string
 }
 
-const LanguageIcon = ({ icon, link, desc }: IconProp) => {
+const LanguageIcon = ({ icon, link }: IconProp) => {
   return (
     <Link href={link} className={styles.icon}>
       {icon}
