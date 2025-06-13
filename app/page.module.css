@@ -1,6 +1,5 @@
 .title {
-    @apply justify-center align-middle h-full flex bg-no-repeat relative;
-    padding: 8vh 0;
+    @apply justify-center align-middle h-full flex bg-no-repeat relative px-[8vh];
     font-size: 15rem;
     animation: revealTitle 0.8s ease-in-out forwards;
     animation-delay: 500ms;
@@ -15,12 +14,11 @@
     filter: opacity(0);
     background-size: 80%;
     padding-right: 5%;
-
 }
 
 @keyframes revealTitle {
     to {
-        @apply pr-0;
+        padding-right: 0;
         background-size: 70%;
         filter: opacity(1);
     }
@@ -55,6 +53,5 @@
 
 .projectFrames {
     @apply flex flex-row overflow-x-hidden overflow-y-hidden justify-center
-        w-full;
-    height: 55vh;
+        w-full h-[55vh];
 }
