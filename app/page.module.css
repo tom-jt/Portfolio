@@ -1,9 +1,7 @@
 .title {
-    @apply justify-center align-middle h-full flex bg-no-repeat relative px-[8vh] text-center;
-    font-size: 15rem;
+    @apply bg-no-repeat text-[12rem] text-center;
     animation: revealTitle 0.8s ease-in-out forwards;
     animation-delay: 500ms;
-    line-height: 1.4;
 
     background: url('/image/background2.jpg') 50% 50%;
     -webkit-text-fill-color: transparent;
@@ -11,14 +9,14 @@
     background-clip: text;
 
     filter: opacity(0);
-    background-size: 80%;
+    background-size: 100%;
     padding-right: 5%;
 }
 
 @keyframes revealTitle {
     to {
         padding-right: 0;
-        background-size: 70%;
+        background-size: 85%;
         filter: opacity(1);
     }
 }

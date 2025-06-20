@@ -60,3 +60,9 @@ h1 {
     theme('colors.teal.600'), theme('colors.teal.600'), 
     theme('colors.teal.500') 50%, theme('colors.teal.700'));
 }
+
+.bgMix {
+  background-image: linear-gradient(144deg, 
+    theme('colors.teal.800'), theme('colors.tblack.900'), 
+    theme('colors.tblack.950') 50%, theme('colors.teal.700'));
+}

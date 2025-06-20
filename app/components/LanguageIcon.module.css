@@ -4,9 +4,9 @@
 }
 
 .icon * {
-    @apply rounded-2xl;
+    @apply rounded-lg;
 }
 
 .icon:hover {
-    scale: 1.4;
+    scale: 1.2;
 }

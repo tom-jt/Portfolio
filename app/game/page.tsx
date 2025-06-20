@@ -3,9 +3,9 @@ import { NavBar, Page } from '@/app/components/NavBar';
 
 const Home = () => {
   return (
-    <main>
+    <main className='flex w-full h-screen'>
       <NavBar active={Page.Game} />
-      <div className={'bgMix absolute pl-28 dynamicHeader w-full h-full flex items-center justify-center'}>
+      <div className={'bgMix flex-grow flex items-center justify-center dynamicHeader'}>
         <h1>Coming Soon!</h1>
       </div>
     </main>
