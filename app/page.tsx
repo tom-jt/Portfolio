@@ -16,10 +16,11 @@ import DevPostSQL from 'devicons-react/icons/PostgresqlOriginal';
 
 const Home = () => {
   return (
-    <main>
+    <main className='flex relative w-full bg-amber-500'>
       <NavBar active={Page.Home} />
-      <div className='pl-28 bg-teal-500'>
-        <div className={styles.bgBlack}>
+
+      <div className='bg-teal-500 flex-grow'>
+        <div className='bgBlack'>
           <h1 className={styles.title}>
             HI THERE,<br />I’M TOM.
           </h1>
@@ -28,7 +29,7 @@ const Home = () => {
         <Separator />
 
         <div className={styles.content + ' dynamicHeader'}>
-          <section className={styles.content2}>
+          <section className='bgTeal'>
             <h1>WHO AM I?</h1>
             <div className='flex px-20 mt-8 gap-16 items-center'>
               <Image src='/image/background.jpg' alt='About me' className='object-fit w-1/2 rounded-2xl' width='1920' height='1080' />
@@ -37,7 +38,7 @@ const Home = () => {
                   I take every new project that I work on as an opportunity to dabble into something new, whether that be a
                   programming language or new software infrastructure 🤖. Here are a list of things I’ve worked with the most ⌨️!
                 </p>
-                <div className='mt-16 flex gap-8 h-16'>
+                <div className='hidden mt-16 flex gap-8 h-16'>
                   <LanguageIcon icon={<DevC size='4rem' />} link='https://en.wikipedia.org/wiki/C_(programming_language)' />
                   <LanguageIcon icon={<DevCS size='4rem' />} link='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)' />
                   <LanguageIcon icon={<DevJava size='4rem' />} link='https://www.java.com/en/' />
@@ -54,7 +55,7 @@ const Home = () => {
 
           <SeparatorReverse />
 
-          <section className={styles.content1}>
+          <section className='bgBlack'>
             <h1>Featured Projects</h1>
             <p>Here are some of the projects I’m most proud of 💖. Take a look 👀!</p>
             <div className={styles.projectFrames}>
@@ -65,8 +66,6 @@ const Home = () => {
           </section>
         </div>
       </div>
-
-
     </main>
   );
 };

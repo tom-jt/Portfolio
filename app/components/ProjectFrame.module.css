@@ -1,7 +1,6 @@
 .frame {
-    @apply mx-6 my-auto rounded-xl
-    transition-all duration-300 cursor-pointer relative flex
-    shadow-xl justify-center;
+    @apply rounded-xl shadow-xl justify-center
+    transition-all duration-300 cursor-pointer relative flex;
     transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
     width: 24rem;
     height: 24rem;

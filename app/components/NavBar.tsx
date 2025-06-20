@@ -12,8 +12,8 @@ export enum Page {
 
 export const NavBar = ({ active = Page.Home }: { active: Page }) => {
   return (
-    <div className='fixed z-50 flex'>
-      <div className='flex flex-col justify-between 
+    <div className='min-w-28 w-28'>
+      <div className='flex flex-col justify-between fixed z-50
         h-screen w-28 bg-tblack-950 text-twhite-d py-2'>
         <div className='flex flex-col items-start'>
           <NavBarIcon icon={<BsHouseFill size='32' />} text='Home' link='/' 
