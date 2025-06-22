@@ -1,0 +1,21 @@
+.frame {
+    @apply rounded-xl shadow-xl justify-center flex relative;
+
+    border: double 0.6em transparent;
+    background-image: url('/image/background3.jpg');
+    background-size: cover;
+    background-origin: border-box;
+    background-clip: border-box;
+
+    animation: infiniteScroll 25s linear infinite;
+}
+
+@keyframes infiniteScroll {
+    0% {
+        background-position-x: 0%;
+    }
+  
+    to {
+        background-position-x: 290%;
+    }
+}

@@ -13,6 +13,7 @@ import DevNext from 'devicons-react/icons/NextjsOriginal';
 import DevTS from 'devicons-react/icons/TypescriptPlain';
 import DevTW from 'devicons-react/icons/TailwindcssOriginal';
 import DevPostSQL from 'devicons-react/icons/PostgresqlOriginal';
+import BorderedImage from './components/BorderedImage';
 
 const Home = () => {
   return (
@@ -31,22 +32,24 @@ const Home = () => {
         <div className={styles.content + ' dynamicHeader'}>
           <section className='bgTeal'>
             <h1>WHO AM I?</h1>
-            <div className='flex px-20 mt-8 gap-16 items-center'>
-              <Image src='/image/background.jpg' alt='About me' className='object-fit w-1/2 rounded-2xl' width='1920' height='1080' />
-              <div className='w-1/2 flex flex-col gap-4'>
+            <div className='flex items-center justify-center gap-16'>
+              <div className='w-1/3'>
+                <BorderedImage src='/image/background.jpg' />
+              </div>
+              <div className='w-1/3 flex flex-col gap-4 text-justify'>
                 <p>👋 Hey there! I’m a Computer Science & Law student at UNSW with a passion for building cool things with code 🧋. 
                   I take every new project that I work on as an opportunity to dabble into something new, whether that be a
                   programming language or new software infrastructure 🤖. Here are a list of things I’ve worked with the most ⌨️!
                 </p>
-                <div className='flex flex-wrap overflow-scroll h-12 gap-4 items-center justify-center'>
-                  <LanguageIcon icon={<DevC size='2rem' />} link='https://en.wikipedia.org/wiki/C_(programming_language)' />
-                  <LanguageIcon icon={<DevCS size='2rem' />} link='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)' />
-                  <LanguageIcon icon={<DevJava size='2rem' />} link='https://www.java.com/en/' />
-                  <LanguageIcon icon={<DevUnity size='2rem' />} link='https://unity.com/' />
-                  <LanguageIcon icon={<DevNext size='2rem' />} link='https://nextjs.org/' />
-                  <LanguageIcon icon={<DevTS size='2rem' />} link='https://nextjs.org/' />
-                  <LanguageIcon icon={<DevTW size='2rem' />} link='https://tailwindcss.com/' />
-                  <LanguageIcon icon={<DevPostSQL size='2rem' />} link='https://www.postgresql.org/' />
+                <div className='flex flex-wrap overflow-visible h-12 gap-4 items-center justify-center'>
+                  <LanguageIcon icon={<DevC size='3rem' />} link='https://en.wikipedia.org/wiki/C_(programming_language)' />
+                  <LanguageIcon icon={<DevCS size='3rem' />} link='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)' />
+                  <LanguageIcon icon={<DevJava size='3rem' />} link='https://www.java.com/en/' />
+                  <LanguageIcon icon={<DevUnity size='3rem' />} link='https://unity.com/' />
+                  <LanguageIcon icon={<DevNext size='3rem' />} link='https://nextjs.org/' />
+                  <LanguageIcon icon={<DevTS size='3rem' />} link='https://nextjs.org/' />
+                  <LanguageIcon icon={<DevTW size='3rem' />} link='https://tailwindcss.com/' />
+                  <LanguageIcon icon={<DevPostSQL size='3rem' />} link='https://www.postgresql.org/' />
                 </div>
               </div>
             </div>

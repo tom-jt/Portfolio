@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ProjectFrame.module.css';
 import Link from 'next/link';
 import * as data from '@/data/dataFetch';
-import Image from 'next/image';
+import BorderedImage from './BorderedImage';
 
 interface ProjectFrameProp {
   id: string
@@ -16,12 +16,13 @@ const ProjectFrame = ({ id }: ProjectFrameProp) => {
   }
 
   return (
-    <Link href={'/projects/' + id} className={styles.frame}>
-      <Image className='object-cover' alt='Thumbnail' src={p.img} width='1920' height='1080' />
-      <div className={styles.textBox}>
-        <h1>{p.name}</h1>
-        <span className='w-96'>{p.desc}</span>
-      </div>
+    <Link href={'/projects/' + id} className={styles.projectFrame}>
+      <BorderedImage src={p.img}>
+        <div className={styles.textBox}>
+          <h1>{p.name}</h1>
+          <span className='w-96'>{p.desc}</span>
+        </div>
+      </BorderedImage>
     </Link>
   )
 }
