@@ -25,6 +25,7 @@ async function Project({ params }: {
   params: Promise<{ projectId: string }>
 }) {
   const projectId = (await params).projectId;
+  console.log(projectId);
   const p: data.ProjectProp | undefined = data.getProject(projectId);
 
   if (!p) {
