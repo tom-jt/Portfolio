@@ -29,7 +29,6 @@ async function Project({ params }: {
   let p: data.ProjectProp | undefined = data.getProject(projectId);
 
   if (!p) {
-    p = "BROKEN";
     notFound();
   }
 
