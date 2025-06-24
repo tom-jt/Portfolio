@@ -36,7 +36,7 @@ const Home = () => {
               <div className='w-1/3'>
                 <BorderedImage src='/image/background.jpg' />
               </div>
-              <div className='w-1/3 flex flex-col gap-4 text-justify'>
+              <div className='w-1/2 flex flex-col gap-4 text-justify'>
                 <p>👋 Hey there! I’m a Computer Science & Law student at UNSW with a passion for building cool things with code 🧋. 
                   I take every new project that I work on as an opportunity to dabble into something new, whether that be a
                   programming language or new software infrastructure 🤖. Here are a list of things I’ve worked with the most ⌨️!
