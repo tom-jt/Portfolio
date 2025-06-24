@@ -28,6 +28,9 @@ async function Project({ params }: {
   console.log(projectId);
   const p: data.ProjectProp | undefined = data.getProject(projectId);
 
+  if (false) {
+    return notFound();
+  }
 
   const langs = [... new Set(p.langs)];
   const langTags: React.JSX.Element[] = [];
