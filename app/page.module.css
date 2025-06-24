@@ -24,8 +24,3 @@
 .content section {
     @apply flex flex-col items-center gap-16 py-16;
 }
-
-.projectFrames {
-    @apply flex flex-row overflow-x-hidden overflow-y-hidden justify-center
-        w-full h-[55vh];
-}

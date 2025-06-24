@@ -20,7 +20,7 @@ const ProjectFrame = ({ id }: ProjectFrameProp) => {
       <BorderedImage src={p.img}>
         <div className={styles.textBox}>
           <h1>{p.name}</h1>
-          <span className='w-96'>{p.desc}</span>
+          <span>{p.desc}</span>
         </div>
       </BorderedImage>
     </Link>

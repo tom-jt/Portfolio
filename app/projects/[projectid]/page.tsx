@@ -5,6 +5,7 @@ import styles from './page.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as data from '@/data/dataFetch';
+import BorderedImage from '@/app/components/BorderedImage';
 
 const langTagsLookup: any = {
   'Java': 'bg-tyellow-900',
@@ -21,10 +22,10 @@ const langTagsLookup: any = {
   'Bootstrap': 'bg-purple-600'
 }
 
-async function Home({ params }: {
-  params: Promise<{ projectid: string }>
+async function Project({ params }: {
+  params: Promise<{ projectId: string }>
 }) {
-  const projectId = (await params).projectid;
+  const projectId = (await params).projectId;
   const p: data.ProjectProp | undefined = data.getProject(projectId);
 
   if (!p) {
@@ -45,42 +46,41 @@ async function Home({ params }: {
   }
   
   return (
-    <main>
+    <main className='flex w-full'>
       <NavBar active={Page.Projects} />
-      <div className={styles.bgBlack + ' pl-28 flex w-full h-full absolute gap-14'}>
-        <div className='w-1/2 pl-14 my-auto'>
-          <Image src={p.img} alt='Project Image' className='object-contain rounded-2xl' width='1920' height='1080'/>
+      
+      <div className='bgMix h-screen flex items-center px-16 gap-16'>
+        <div className='w-1/2 flex items-center'>
+          <BorderedImage src={p.img} />
         </div>
-        <div className='pr-14 w-1/2 flex my-48'>
-          <div className='w-full h-full flex flex-col gap-4 justify-between'>
-            <div className='dynamicHeader'>
+
+        <div className='w-1/2 h-2/3 flex flex-col gap-4'>
+          <div className='dynamicHeader'>
+            <h1>
+              {p.name}
+              <div className='bg-twhite-d h-1 rounded' />
+            </h1>
+          </div>
+          <div className={styles.langs + ' flex flex-row gap-4'}>
+            {langTags}
+          </div>
+
+          <div className='flex-grow'>
+            {p.desc}
+          </div>
+
+          <div className='flex justify-between'>
+            <Link href='/projects' className={styles.fancyButton + ' ' + styles.redButton}>
               <h1>
-                {p.name}
-                <div className='bg-twhite-d h-1 rounded' />
+                Back to Projects
               </h1>
-            </div>
-            <div className={styles.langs + ' flex flex-row gap-4'}>
-              {langTags}
-            </div>
+            </Link>
 
-            <div className='flex-grow'>
-              {p.desc}
-            </div>
-
-            <div className='flex justify-between'>
-              <Link href='/projects' className={styles.fancyButton + ' ' + styles.redButton}>
-                <h1>
-                  Back to Projects
-                </h1>
-              </Link>
-
-              <Link href={p.link} className={styles.fancyButton + ' ' + styles.tealButton}>
-                <h1>
-                  Take Me There!
-                </h1>
-              </Link>
-            </div>
-
+            <Link href={p.link} className={styles.fancyButton + ' ' + styles.tealButton}>
+              <h1>
+                Take Me There!
+              </h1>
+            </Link>
           </div>
         </div>
       </div>
@@ -88,4 +88,4 @@ async function Home({ params }: {
   );
 };
 
-export default Home;
+export default Project;

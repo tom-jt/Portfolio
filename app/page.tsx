@@ -14,13 +14,14 @@ import DevTS from 'devicons-react/icons/TypescriptPlain';
 import DevTW from 'devicons-react/icons/TailwindcssOriginal';
 import DevPostSQL from 'devicons-react/icons/PostgresqlOriginal';
 import BorderedImage from './components/BorderedImage';
+import ProjectCarousel from './components/ProjectCarousel';
 
 const Home = () => {
   return (
     <main className='flex w-full'>
       <NavBar active={Page.Home} />
 
-      <div className='bg-teal-500 flex-grow'>
+      <div className='bg-teal-500'>
         <div className='bgBlack h-screen flex items-center justify-center'>
           <h1 className={styles.title}>
             HI THERE,<br />I’M TOM.
@@ -61,11 +62,11 @@ const Home = () => {
           <section className='bgBlack'>
             <h1>Featured Projects</h1>
             <p>Here are some of the projects I’m most proud of 💖. Take a look 👀!</p>
-            <div className={styles.projectFrames}>
+            <ProjectCarousel>
               <ProjectFrame id='linguae-legend'/>
               <ProjectFrame id='con-grazia'/>
               <ProjectFrame id='xchange'/>
-            </div>
+            </ProjectCarousel>
           </section>
         </div>
       </div>

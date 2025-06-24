@@ -1,32 +1,31 @@
 .projectFrame {
-    @apply shadow-xl transition-all duration-300 cursor-pointer relative flex;
+    @apply shadow-xl transition-all duration-300 cursor-pointer relative flex
+        w-full h-full;
     transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
-    width: 24rem;
-    height: 24rem;
 }
 
 .projectFrame:hover {
-    @apply shadow-2xl shadow-black;
-    scale: 1.1;
-    width: 35rem;
+    @apply shadow-2xl shadow-black w-[140%] scale-110 z-10;
 }
 
 .textBox {
-    @apply text-center absolute p-2 w-11/12 min-w-full min-h-full bg-tblack-900/60 bottom-0
-        flex flex-col items-center transition-all duration-200 justify-center;
+    @apply text-center absolute w-11/12 min-w-full min-h-full 
+        bg-tblack-900/60 bottom-0 p-1
+        flex flex-col items-center justify-center
+        transition-all duration-200;
         backdrop-filter: blur(5px);
 }
 
 .textBox span {
-    @apply max-h-0 collapse transition-all duration-100;
+    @apply max-h-0 ease-linear transition-all duration-100 opacity-0;
 }
 
 .projectFrame:hover .textBox span {
-    @apply max-h-full visible;
+    @apply max-h-full opacity-100;
 }
 
 .textBox h1 {
-    @apply text-5xl transition-all duration-100;
+    @apply text-4xl transition-all duration-100;
 }
 
 .projectFrame:hover .textBox h1 {

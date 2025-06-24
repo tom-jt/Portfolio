@@ -12,5 +12,5 @@ export interface ProjectProp {
 const projects = projectsJson.projects as ProjectProp[];
 
 export function getProject(id: string): ProjectProp | undefined {
-  return projects.find(e => e.id == id);
+  return projects.find(e => e.id === id);
 }

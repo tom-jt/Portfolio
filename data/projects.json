@@ -59,7 +59,7 @@
         {
             "id": "portfolio",
             "name": "My Portfolio",
-            "desc": "A collection of all the project's I've made",
+            "desc": "A collection of all the projects I've made",
             "img": "/image/portfolio.png",
             "langs": ["HTML/CSS", "Tailwind", "Next.JS", "React", "Bootstrap"],
             "link": "/"
