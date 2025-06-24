@@ -26,10 +26,11 @@ async function Project({ params }: {
 }) {
   const projectId = (await params).projectId;
   console.log(projectId);
-  const p: data.ProjectProp | undefined = data.getProject(projectId);
+  let p: data.ProjectProp | undefined = data.getProject(projectId);
 
-  if (false) {
-    return notFound();
+  if (!p) {
+    p = "BROKEN";
+    notFound();
   }
 
   const langs = [... new Set(p.langs)];
