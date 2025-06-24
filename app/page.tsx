@@ -3,7 +3,6 @@ import styles from './page.module.css';
 import { NavBar, Page } from './components/NavBar';
 import ProjectFrame from './components/ProjectFrame';
 import { Separator, SeparatorReverse } from './components/Separator';
-import Image from 'next/image';
 import LanguageIcon from './components/LanguageIcon';
 import DevC from 'devicons-react/icons/COriginal';
 import DevCS from 'devicons-react/icons/CsharpOriginal';

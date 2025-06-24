@@ -3,7 +3,6 @@ import { NavBar, Page } from '@/app/components/NavBar';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
 import * as data from '@/data/dataFetch';
 import BorderedImage from '@/app/components/BorderedImage';
 
