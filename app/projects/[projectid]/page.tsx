@@ -26,7 +26,7 @@ async function Project({ params }: {
 }) {
   const projectId = (await params).projectId;
   console.log(projectId);
-  let p: data.ProjectProp | undefined = data.getProject(projectId);
+  const p: data.ProjectProp | undefined = data.getProject(projectId);
 
   if (!p) {
     notFound();
