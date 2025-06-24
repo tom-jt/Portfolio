@@ -21,9 +21,9 @@ const langTagsLookup: any = {
 }
 
 async function Project({ params }: {
-  params: Promise<{ projectId: string }>
+  params: Promise<{ projectid: string }>
 }) {
-  const projectId = (await params).projectId;
+  const projectId = (await params).projectid;
   const p: data.ProjectProp | undefined = data.getProject(projectId);
 
   if (!p) {
