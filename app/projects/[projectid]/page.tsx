@@ -40,7 +40,9 @@ async function Project({ params }: {
       continue;
     }
 
-    langTags.push(<div key={l} className={col}>{l}</div>);
+    langTags.push(<div key={l} className={col + 
+      ' rounded-full shadow-md px-3 text-nowrap'
+    }>{l}</div>);
   }
   
   return (
@@ -48,7 +50,7 @@ async function Project({ params }: {
       <NavBar active={Page.Projects} />
       
       <div className='bgMix h-screen flex items-center px-16 gap-16'>
-        <div className='w-1/2 flex items-center'>
+        <div className='w-1/2'>
           <BorderedImage src={p.img} />
         </div>
 
@@ -56,10 +58,11 @@ async function Project({ params }: {
           <div className='dynamicHeader'>
             <h1>
               {p.name}
-              <div className='bg-twhite-d h-1 rounded' />
+              <div className='bgTeal h-1 rounded' />
             </h1>
           </div>
-          <div className={styles.langs + ' flex flex-row gap-4'}>
+          
+          <div className='flex flex-wrap gap-4'>
             {langTags}
           </div>
 
@@ -69,15 +72,15 @@ async function Project({ params }: {
 
           <div className='flex justify-between'>
             <Link href='/projects' className={styles.fancyButton + ' ' + styles.redButton}>
-              <h1>
+              <p>
                 Back to Projects
-              </h1>
+              </p>
             </Link>
 
             <Link href={p.link} className={styles.fancyButton + ' ' + styles.tealButton}>
-              <h1>
+              <p>
                 Take Me There!
-              </h1>
+              </p>
             </Link>
           </div>
         </div>

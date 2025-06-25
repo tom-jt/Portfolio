@@ -20,7 +20,7 @@ const Home = () => {
     <main className='flex w-full'>
       <NavBar active={Page.Home} />
 
-      <div className='bg-teal-500'>
+      <div>
         <div className='bgBlack h-screen flex items-center justify-center'>
           <h1 className={styles.title}>
             HI THERE,<br />I’M TOM.

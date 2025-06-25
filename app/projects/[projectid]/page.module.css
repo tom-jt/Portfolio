@@ -11,11 +11,8 @@
 }
 
 .fancyButton {
-  @apply transition-all duration-200;
-  border-radius: 8px;
+  @apply transition-all duration-200 text-twhite-d p-1 rounded-md;
   box-shadow: theme('colors.tblack.800') 0 15px 30px -5px;
-  color: #FFFFFF;
-  padding: 3px;
   touch-action: manipulation;
   transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -24,15 +21,11 @@
   scale: 1.2;
 }
 
-.fancyButton:hover h1 {
+.fancyButton:hover p {
   @apply bg-transparent;
 }
 
-.fancyButton h1 {
+.fancyButton p {
   @apply bg-tblack-d p-4 rounded-md w-full text-xl
   h-full transition-all duration-200;
-}
-
-.langs div {
-  @apply rounded-full shadow-md px-3 min-w-16 text-center;
 }
