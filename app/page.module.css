@@ -1,5 +1,5 @@
 .title {
-    @apply bg-no-repeat text-[12rem] text-center;
+    @apply bg-no-repeat md:text-[8rem] max-md:text-[6rem] text-center;
     animation: revealTitle 0.8s ease-in-out forwards;
     animation-delay: 500ms;
 

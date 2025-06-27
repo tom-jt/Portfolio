@@ -5,7 +5,8 @@
 }
 
 .projectFrame:hover {
-    @apply shadow-2xl shadow-black w-[140%] scale-110 z-10;
+    @apply shadow-2xl shadow-black z-10
+        md:w-[140%] md:scale-110 max-md:scale-110;
 }
 
 .textBox {
@@ -17,7 +18,8 @@
 }
 
 .textBox span {
-    @apply max-h-0 ease-linear transition-all duration-100 opacity-0;
+    @apply max-h-0 ease-linear transition-all duration-100 opacity-0
+        max-md:max-h-full max-md:opacity-100;
 }
 
 .projectFrame:hover .textBox span {

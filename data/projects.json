@@ -38,7 +38,7 @@
             "desc": "A distributed event streaming platform library and API inspired by Apache Kafka",
             "img": "/image/tributary.png",
             "langs": ["Java", "Gradle"],
-            "link": "https://github.com/abe123442/xChange"
+            "link": "https://github.com/tom-jt/Tributary"
         },
         {
             "id": "xchange",

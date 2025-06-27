@@ -1,9 +1,10 @@
 import React from 'react';
-import { NavBar, Page } from '@/app/components/NavBar';
+import { PageType } from '@/app/components/NavBar';
 import styles from './page.module.css';
 import Link from 'next/link';
 import * as data from '@/data/dataFetch';
 import BorderedImage from '@/app/components/BorderedImage';
+import Page from '@/app/components/Page';
 
 const langTagsLookup: any = {
   'Java': 'bg-tyellow-900',
@@ -46,9 +47,7 @@ async function Project({ params }: {
   }
   
   return (
-    <main className='flex w-full'>
-      <NavBar active={Page.Projects} />
-      
+    <Page activePage={PageType.Projects}>
       <div className='bgMix h-screen flex items-center px-16 gap-16'>
         <div className='w-1/2'>
           <BorderedImage src={p.img} />
@@ -85,7 +84,7 @@ async function Project({ params }: {
           </div>
         </div>
       </div>
-    </main>
+    </Page>
   );
 };
 

@@ -1,37 +1,36 @@
 .iconBase {
-    @apply relative flex items-center justify-center
-        h-20 w-20 left-4 my-2 shadow-lg
-        text-teal-400 bgBlack
-        rounded-3xl cursor-pointer
-        transition-all duration-150;
+    @apply relative flex items-center justify-center gap-2
+        h-20 w-20 shadow-lg
+        text-teal-400 iconBlack
+        cursor-pointer transition-all duration-150
+        md:rounded-3xl;
     transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .iconBase div {
-    display: none;
-    margin-left: 1em;
+    @apply hidden;
 }
 
 .iconBase:hover {
-    @apply text-twhite-d rounded-xl bgTeal w-40;
+    @apply text-twhite-d iconTeal md:w-40 md:rounded-xl;
 }
 
 .iconBase:hover div {
-    @apply inline-block;
+    @apply md:inline-block;
 }
 
 .iconActive {
-    @apply text-twhite-d rounded-xl bgTeal;
+    @apply text-twhite-d iconTeal md:rounded-xl;
 }
 
-.bgBlack {
-    background-image: linear-gradient(144deg, 
+.iconBlack {
+    background-image: linear-gradient(180deg, 
         theme('colors.tblack.900'), theme('colors.tblack.700'), 
         theme('colors.tblack.900') 50%, theme('colors.tblack.800'));
 }
 
-.bgTeal {
-    background-image: linear-gradient(144deg, 
+.iconTeal {
+    background-image: linear-gradient(180deg, 
         theme('colors.teal.700'), theme('colors.teal.300'), 
-        theme('colors.teal.500') 50%, theme('colors.tblack.700'));
+        theme('colors.teal.500') 50%, theme('colors.teal.800'));
 }

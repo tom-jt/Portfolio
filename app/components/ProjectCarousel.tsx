@@ -4,7 +4,8 @@ interface ProjectCarouselProp {
 
 const ProjectCarousel = ({ children }: ProjectCarouselProp) => {
   return (
-    <div className='flex h-96 px-8 gap-2'>
+    <div className='flex px-8 gap-2 items-center
+      md:h-96 max-md:flex-col'>
       {children}
     </div>
   )

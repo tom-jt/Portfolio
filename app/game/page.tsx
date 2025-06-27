@@ -1,14 +1,14 @@
 import React from 'react';
-import { NavBar, Page } from '@/app/components/NavBar';
+import { PageType } from '@/app/components/NavBar';
+import Page from '../components/Page';
 
 const Home = () => {
   return (
-    <main className='flex w-full h-screen'>
-      <NavBar active={Page.Game} />
-      <div className={'bgMix flex-grow flex items-center justify-center dynamicHeader'}>
+    <Page activePage={PageType.Game}>
+      <div className='bgMix h-screen w-full flex items-center justify-center dynamicHeader'>
         <h1>Coming Soon!</h1>
       </div>
-    </main>
+    </Page>
   );
 };
 
