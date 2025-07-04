@@ -13,6 +13,13 @@
     padding-right: 5%;
 }
 
+@media (max-width: 768px) {
+    .title {
+        @apply bg-cover;
+        //TODO: ADD TITLE ANIM FOR SMALL
+    }
+}
+
 @keyframes revealTitle {
     to {
         padding-right: 0;
@@ -23,4 +30,8 @@
 
 .content section {
     @apply flex flex-col items-center gap-16 py-16;
+}
+
+.content section h1 {
+    @apply text-center;
 }

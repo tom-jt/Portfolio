@@ -13,7 +13,7 @@ const Page = ({ activePage, children }: PageProp) => {
       <div className='w-full h-full'>{children}</div>
 
       {/* Mobile viewport space for NavBar */}
-      <div className='max-md:min-h-20' />
+      <div className='max-md:min-h-12' />
     </main>
   );
 }

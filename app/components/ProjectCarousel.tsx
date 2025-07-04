@@ -1,12 +1,18 @@
+import ProjectFrame from "./ProjectFrame";
+
 interface ProjectCarouselProp {
-  children?: any
+  projectIds: string[]
 }
 
-const ProjectCarousel = ({ children }: ProjectCarouselProp) => {
+const ProjectCarousel = ({ projectIds }: ProjectCarouselProp) => {
   return (
     <div className='flex px-8 gap-2 items-center
-      md:h-96 max-md:flex-col'>
-      {children}
+      md:h-96 max-md:flex-col max-md:px-2'>
+      {
+        projectIds.map((id, i) => (
+          <ProjectFrame id={id} key={i} />
+        ))
+      }
     </div>
   )
 }

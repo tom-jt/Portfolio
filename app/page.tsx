@@ -17,6 +17,8 @@ import ProjectCarousel from './components/ProjectCarousel';
 import Page from './components/Page';
 
 const Home = () => {
+  const featuredProjectIds = ['linguae-legend', 'con-grazia', 'xchange'];
+  
   return (
     <Page activePage={PageType.Home}>
       <div className='bgBlack h-screen flex items-center justify-center'>
@@ -40,7 +42,7 @@ const Home = () => {
                 I take every new project that I work on as an opportunity to dabble into something new, whether that be a
                 programming language or new software infrastructure 🤖. Here are a list of things I’ve worked with the most ⌨️!
               </p>
-              <div className='flex flex-wrap overflow-visible h-12 gap-4 items-center justify-center'>
+              <div className='flex flex-wrap gap-4 items-center justify-center'>
                 <LanguageIcon icon={<DevC size='3rem' />} link='https://en.wikipedia.org/wiki/C_(programming_language)' />
                 <LanguageIcon icon={<DevCS size='3rem' />} link='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)' />
                 <LanguageIcon icon={<DevJava size='3rem' />} link='https://www.java.com/en/' />
@@ -61,11 +63,7 @@ const Home = () => {
           max-md:flex-col max-md:px-8'>
           <h1>Featured Projects</h1>
           <p>Here are some of the projects I’m most proud of 💖. Take a look 👀!</p>
-          <ProjectCarousel>
-            <ProjectFrame id='linguae-legend'/>
-            <ProjectFrame id='con-grazia'/>
-            <ProjectFrame id='xchange'/>
-          </ProjectCarousel>
+          <ProjectCarousel projectIds={featuredProjectIds} />
         </section>
       </div>
     </Page>

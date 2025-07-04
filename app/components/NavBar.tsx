@@ -13,7 +13,7 @@ export enum PageType {
 export const NavBar = ({ active = PageType.Home }: { active: PageType }) => {
   return (
     <div className='md:min-w-28'>
-      <div className='fixed z-50 flex 
+      <div className='fixed z-50 flex
         max-md:w-screen md:h-screen max-md:flex-col max-md:bottom-0'>
         <div className='bg-gradient-to-t from-tblack-950/50 to-tblack-950/0
           h-4 md:hidden' />
