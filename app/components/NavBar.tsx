@@ -38,7 +38,7 @@ export const NavBar = ({ active = PageType.Home }: { active: PageType }) => {
             <NavBarSocial icon={<BsFacebook size='32' />} 
               link='https://www.facebook.com/profile.php?id=100089795907381' />
             <NavBarSocial icon={<BsLinkedin size='32' />} 
-              link='https://www.linkedin.com/in/tom-liu-b0957b34a' />
+              link='https://www.linkedin.com/in/tom-liu-jt' />
           </div>
         </div>
 
