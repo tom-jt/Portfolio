@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './page.module.css';
 import { PageType } from '@/app/components/NavBar';
-import ProjectFrame from '@/app/components/ProjectFrame';
 import { Separator } from '@/app/components/Separator';
 import ProjectCarousel from '../components/ProjectCarousel';
 import Page from '../components/Page';

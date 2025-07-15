@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './page.module.css';
 import { PageType } from './components/NavBar';
-import ProjectFrame from './components/ProjectFrame';
 import { Separator, SeparatorReverse } from './components/Separator';
 import LanguageIcon from './components/LanguageIcon';
 import DevC from 'devicons-react/icons/COriginal';

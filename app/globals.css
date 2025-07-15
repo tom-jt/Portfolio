@@ -15,18 +15,15 @@
 }
 
 body {
+  @apply md:text-xl max-md:text-lg m-0 p-0;
   font-family: var(--font-poppins);
   color: var(--foreground);
   background: var(--background);
-  font-size: 1.2rem;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
+  @apply font-bold md:text-5xl max-md:text-3xl;
   font-family: var(--font-inter);
-  font-size: 3rem;
-  font-weight: bold;
 }
 
 .dynamicHeader h1 {

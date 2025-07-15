@@ -30,7 +30,7 @@ export const NavBar = ({ active = PageType.Home }: { active: PageType }) => {
           </div>
 
           <div className='flex gap-4 justify-center items-center
-            md:py-2 max-md:px-2 md:flex-col'>
+            md:py-2 max-md:px-2 flex-col max-md:fixed max-md:bottom-16 max-md:right-4'>
             <NavBarSocial icon={<BsGithub size='32' />} 
               link='https://github.com/tom-jt' />
             <NavBarSocial icon={<BsInstagram size='32' />} 

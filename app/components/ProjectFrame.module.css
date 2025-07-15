@@ -27,11 +27,11 @@
 }
 
 .textBox h1 {
-    @apply text-4xl transition-all duration-100;
+    @apply text-4xl transition-all duration-100 max-md:text-2xl;
 }
 
 .projectFrame:hover .textBox h1 {
-    @apply md:text-2xl;
+    @apply text-2xl;
 }
 
 .projectFrame:hover .textBox {
