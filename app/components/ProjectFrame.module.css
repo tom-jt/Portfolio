@@ -6,7 +6,7 @@
 
 .projectFrame:hover {
     @apply shadow-2xl shadow-black z-10
-        md:w-[140%] md:scale-110 max-md:scale-110;
+        md:w-[140%] md:scale-110;
 }
 
 .textBox {
@@ -31,9 +31,9 @@
 }
 
 .projectFrame:hover .textBox h1 {
-    @apply text-2xl;
+    @apply md:text-2xl;
 }
 
 .projectFrame:hover .textBox {
-    @apply min-h-0 min-w-0 bottom-2 rounded-xl;
+    @apply md:min-h-0 md:min-w-0 md:bottom-2 md:rounded-xl;
 }
